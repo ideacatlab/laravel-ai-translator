@@ -1,25 +1,24 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ideacatlab/laravel-ai-translator",
+    "description": "This repository hosts a developer composer package aimed at facilitating the integration of OpenAI into Laravel applications, with a focus on simplifying the development of multilingual features. The initiative seeks to provide an accessible way for developers to enhance their Laravel apps with advanced language capabilities powered by OpenAI.",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "ideacatlab",
+        "laravel-ai-translator"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ideacatlab/laravel-ai-translator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Razvan Gheorghe",
+            "email": "razvan@ideacat.ro",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "orhanerday/open-ai": "^5.1"
     },
     "require-dev": {
-        :require_dev_testing,
-        :require_dev_codestyle,
         "spatie/ray": "^1.28"
     },
     "autoload": {
@@ -32,14 +31,10 @@
             "VendorName\\Skeleton\\Tests\\": "tests"
         }
     },
-    "scripts": {
-        :scripts_testing,
-        :scripts_codestyle
-    },
+    "scripts": {},
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            :plugins_testing,
             "phpstan/extension-installer": true
         }
     },
